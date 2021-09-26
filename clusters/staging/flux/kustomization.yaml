@@ -4,4 +4,4 @@ resources:
   - main.yaml
 
   # aplicações
-  - ../apps/app1/deploymet.yaml
+  - ../apps/app1/deployment.yaml
