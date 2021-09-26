@@ -3,7 +3,8 @@ kind: HelmRelease
 metadata:
   name: app3
   namespace: flux-system
-spec:  
+spec:
+  releaseName: app3
   targetNamespace: default
   storageNamespace: default
   chart:
