@@ -21,3 +21,18 @@ metadata:
 data:
   username: bWFyY2Vsby5tZWxvQHByb3Rvbm1haWwuY29t
   password: Z2hwX3NYZmVmQ1dZWHBlSmVadFhRUHpxSTFsN3REY001RjJRVkxnQQ==
+
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: staging
+  namespace: flux-system
+spec:
+  interval: 10m0s
+  path: ./clusters/staging/flux
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: marceleza
+    namespace: flux-system
