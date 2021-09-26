@@ -9,4 +9,4 @@ resources:
   - ../apps/app1/deployment.yaml
 
   # app2
-  - ../apps/app2/
+  - ../apps/app2/main.yaml
