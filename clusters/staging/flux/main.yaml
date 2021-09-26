@@ -1,0 +1,23 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: marceleza
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  secretRef:
+    name: git-credentials
+  timeout: 20s
+  url: https://github.com/mmmarceleza/mykind.git
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: git-credentials
+  namespace: flux-system
+data:
+  username: bWFyY2Vsby5tZWxvQHByb3Rvbm1haWwuY29t
+  password: Z2hwX3NYZmVmQ1dZWHBlSmVadFhRUHpxSTFsN3REY001RjJRVkxnQQ==
