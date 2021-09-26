@@ -4,8 +4,8 @@ metadata:
   name: app2
   namespace: flux-system
 spec:  
-  targetNamespace: app2
-  storageNamespace: app2
+  targetNamespace: default
+  storageNamespace: default
   chart:
     spec:
       chart: ./clusters/charts/app2/
