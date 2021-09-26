@@ -8,7 +8,7 @@ spec:
   storageNamespace: default
   chart:
     spec:
-      chart: ./clusters/charts/app2/
+      chart: ./clusters/charts/app2
       sourceRef:
         kind: GitRepository
         name: marceleza
