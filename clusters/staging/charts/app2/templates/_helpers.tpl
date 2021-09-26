@@ -3,8 +3,7 @@
 Expand the name of the chart.
 */}}
 {{- define "basic-deployment.name" -}}
-{{- .Release.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
-# {{- default .Release.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- default .Release.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
