@@ -10,3 +10,6 @@ resources:
 
   # app2
   - ../apps/app2/main.yaml
+
+    # app3
+  - ../apps/app3/main.yaml

@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:  
   interval: 1m
-  path: "./clusters/staging/apps/app2"
+  path: "./clusters/staging/apps/app3"
   sourceRef:
     kind: GitRepository
     name: marceleza
