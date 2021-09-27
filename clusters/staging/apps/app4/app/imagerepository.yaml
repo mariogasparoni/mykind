@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: app4
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  image: docker.io/mmmarceleza/app4
+  secretRef:
+    name: regcred

@@ -45,4 +45,14 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1h0m0s
-  url: https://charts.getup.io/getupcloud    
+  url: https://charts.getup.io/getupcloud
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: regcred
+  namespace: flux-system
+data:
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogImJXMXRZWEpqWld4bGVtRTZOemMyWWpCa1pURXRNekUzWVMwMFkyRTNMV0ZtTmpjdFlUVTNaRGxsWldGa05USTUiCgkJfQoJfQp9
+type: kubernetes.io/dockerconfigjson

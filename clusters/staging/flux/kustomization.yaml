@@ -11,5 +11,8 @@ resources:
   # app2
   - ../apps/app2/main.yaml
 
-    # app3
+  # app3
   - ../apps/app3/main.yaml
+
+  # app4
+  - ../apps/app4/app/main.yaml
