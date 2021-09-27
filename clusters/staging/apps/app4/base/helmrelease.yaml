@@ -1,18 +1,18 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: bmg
-  namespace: flux-apps
+  name: app4
+  namespace: flux-system
 spec:  
-  targetNamespace: bmg
-  storageNamespace: bmg
+  targetNamespace: default
+  storageNamespace: default
   chart:
     spec:
-      chart: helm/bmg
+      chart: ./clusters/staging/charts/app4
       sourceRef:
         kind: GitRepository
-        name: git-bmg
-        namespace: flux-apps
+        name: marceleza
+        namespace: flux-system
   dependsOn: []
   install:
     createNamespace: true
@@ -24,3 +24,4 @@ spec:
     imagePullSecrets:
       - name: regcred
     replicaCount: 1
+
