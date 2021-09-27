@@ -7,4 +7,4 @@ spec:
   releaseName: app4
   values:
     image:
-      repository: docker.io/mmmarceleza/app4:daee161-20210927004548 # {"$imagepolicy": "flux-apps:app4"}
+      repository: docker.io/mmmarceleza/app4:daee161-20210927004548 # {"$imagepolicy": "flux-system:app4"}
