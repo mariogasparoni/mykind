@@ -6,7 +6,7 @@ resources:
   #------- Aplicações -----------
 
   # # # app1
-  # - ../apps/app1/deployment.yaml
+  - ../apps/app1/deployment.yaml
 
   # # # app2
   # - ../apps/app2/main.yaml
