@@ -15,4 +15,4 @@ resources:
   - ../apps/app3/main.yaml
 
   # # app4
-  # - ../apps/app4/app/main.yaml
+  - ../apps/app4/app/main.yaml
